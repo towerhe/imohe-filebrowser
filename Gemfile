@@ -4,13 +4,15 @@ gem 'sinatra'
 gem 'haml'
 gem 'grit'
 
-group :test do
+group :development do
   gem 'rspec'
   gem 'cucumber'
-  gem 'rcov'
-end
-
-group :development do
+  gem 'cucumber-sinatra'
   gem "bundler"
   gem "jeweler"
+end
+
+group :test do
+  gem 'capybara'
+  gem 'rcov'
 end
